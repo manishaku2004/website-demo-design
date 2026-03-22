@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSea</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body class=" bg-gradient-custom w-100">
+  <header class="text-light  ">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand fs-4 fw-bold" href="#">
+        <img src="img/Group 23 (1).png" alt="" height="30"> OpenSea |
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse ds" id="mainNavbar">
+
+        <!-- Left menu -->
+        <ul class="navbar-nav me-3 mb-2 mb-lg-0 fw-bold">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Drops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Stats</a>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <form class="d-flex flex-grow-1 mx-lg-3 mb-2 mb-lg-0">
+          <div class="input-group shadow-three-sides rounded-4 w-100">
+            <span class="input-group-text bg-transparent border-0 text-light">
+              <i class="fa fa-search fs-4"></i>
+            </span>
+            <input class="form-control bg-transparent border-0 text-light" type="search"
+              placeholder="Search items, accounts and NFTs">
+          </div>
+        </form>
+
+        <!-- Right side -->
+        <div class="d-flex align-items-center gap-2">
+          <div class="d-flex align-items-center bg-transparent p-1 shadow-three-sides rounded-4">
+            <button class="pay btn btn-outline-light border-0">Payment Method</button>
+            <span class="text-light">
+              <i class="fa-regular fa-circle-user fs-3"></i>
+            </span>
+          </div>
+
+          <button class="btn btn-outline-light shadow rounded-4">
+            <i class="fa-solid fa-cart-shopping fs-3"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navebar2 fs-24 fw-bold ">
+    <div class="container-fluid d-flex flex-row gap-3" style="overflow-x: auto;">
+      <div class=" d-inline-flex p-2 bg-transparent  shadow-three-sides w-66  rounded-4">All</div>
+      <div>
+        <ul class="navbar-nav d-flex flex-row  gap-3">
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Gaming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Memberships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PFPs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Photography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Music</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  </header>
+
+  <main >
+    <div class="splide" id="mySlider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="img/Rectangle 5.png" alt=""></li>
+          <li class="splide__slide"><img src="img/Rectangle 6.png" alt=""></li>
+          <li class="splide__slide"><img src="img/Rectangle 7 (1).png" alt=""></li>
+          <li class="splide__slide"><img src="img/Rectangle 26.png" alt=""></li>
+          <li class="splide__slide"><img src="img/Rectangle 25.png" alt=""></li>
+          <li class="splide__slide"><img src="img/Rectangle 27.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class=" box1 d-flex flex-row   align-items-center  flex-nowrap" style="overflow-x: auto; white-space: nowrap;">
+      <div class=" top d-flex   align-items-center    rounded  bg-top ">
+        <button type="button" class="btn btn-light fw-bold shadow-lg ">Trending</button>
+        <p class="px-3 d-flex align-items-center">Top </p>
+      </div>
+
+      <div class=" d-flex align-items-center justify-content-between m-3 w-50">
+        <div class=" d-flex align-items-center bg-top rounded shadow px-2">
+          <p>1h</p>
+          <p>6h</p>
+          <p class="p-1 shodows-sm fw-bold rounded  bg-light">24h</p>
+          <p>7h</p>
+        </div>
+        <div class="dropdown rounded shadow">
+          <button class="btn bg-top dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All chains
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div><button type="button" class="btn bg-top shadow rounded">View all</button></div>
+      </div>
+    </div>
+
+    <div class=" mt-4" style="overflow-x: auto;">
+      <table class="table table-borderless">
+
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Collection</th>
+            <th>Floor Price</th>
+            <th>Volume</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Rahul</td>
+            <td>CSE</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Manisha</td>
+            <td>CSE</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rahul</td>
+            <td>CSE</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Manisha</td>
+            <td>CSE</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="py-3 ">
+      <h3 class="pb-3">Notable Collections</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mx-0">
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 19.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Edit By Cam</h5>
+            </div>
+            <div class="d-flex justify-content-between">
+              <ul>
+                <p>Floor </p>
+                <h6>0.12 ETH</h6>
+              </ul>
+              <ul>
+                <p>24h Volume</p>
+                <h6>1.03 ETH</h6>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 20.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Edit By Cam</h5>
+
+            </div>
+            <div class="d-flex justify-content-between">
+              <ul>
+                <p>Floor </p>
+                <h6>0.12 ETH</h6>
+              </ul>
+              <ul>
+                <p>24h Volume</p>
+                <h6>1.03 ETH</h6>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 21.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Edit By Cam</h5>
+            </div>
+            <div class="d-flex justify-content-between">
+              <ul>
+                <p>Floor </p>
+                <h6>0.12 ETH</h6>
+              </ul>
+              <ul>
+                <p>24h Volume</p>
+                <h6>1.03 ETH</h6>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3 ">
+      <div class="d-flex justify-content-between pb-3">
+        <h3>NFT’s 101</h3>
+        <button type="button" class="btn bg-top shadow-lg rounded">Learn More</button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mx-0">
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 19 copy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="This is an NFT">Card title</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 20 copy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The way to buy an NFT</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100 rounded">
+            <img src="img/Rectangle 21 copy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Create an NFT</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" py-3">
+      <h4>Explore Categories</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 mx-0">
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 25.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Art</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 26.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gaming</h5>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-4 h-100">
+            <img src="img/Rectangle 27.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Photography</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-f_color text-light ">
+    <div class="d-flex mx-4 ">
+      <div class="">
+        <h4>Stay in the loop</h4>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form,</p>
+        <input class=" rounded-3 p-1 border-0 shadow w-50  " type="text" placeholder="  Your email address">
+        <button class="rounded-3 p-1 border-0 shadow bg-sign text-light w-25"> Sign up</button>
+      </div>
+      <div>
+        <h3>Join the community</h3>
+      </div>
+
+    </div>
+    <hr>
+    <div class="  row p-4 mx-0 ">
+
+      <div class=" col-sm-12 col-md-6 col-lg-3 mb-4 ">
+        <img src="img/Group 23 (1).png" alt="" height="30">
+        <h4>OpenSea</h4>
+        <p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).
+          Buy, sell, and discover exclusive digital items.</p>
+
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4 ">
+        <h4>My Account</h4>
+        <p>Profile
+
+          Favorites
+
+          Watchlist
+
+          My collections
+
+          Create
+
+          OpenSea Pro
+
+          Settings</p>
+      </div>
+
+
+      <div class="  col-sm-12 col-md-6 col-lg-3 mb-4">
+        <h4>Resources</h4>
+        <p>Blog
+
+          Learn
+
+          Help center
+
+          Community standards
+
+          Taxes
+
+          Partners
+
+          Developer platform
+
+          Platform status</p>
+      </div>
+
+
+      <div class="  col-sm-12 col-md-6 col-lg-3  mb-4">
+        <h4>Company</h4>
+        <p>About
+
+          Careers
+
+          Ventures</p>
+        <h4>Learn</h4>
+        <p>What is an NFT?
+
+          How to buy an NFT
+
+          What are NFT drops?
+
+          How to sell an NFT using OpenSea
+
+          How to create an NFT on OpenSea
+
+          What is a crypto wallet?
+
+          What is cryptocurrency?
+
+          What are blockchain gas fees?
+
+          What is a blockchain?
+
+          What is web3?
+
+          How to stay protected in web3</p>
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+  <!-- <div class="splide" id="mySlider">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="img/Rectangle 19.png" alt=""></li>
+        <li class="splide__slide"><img src="img/Rectangle 20 copy.png" alt=""></li>
+        <li class="splide__slide"><img src="img/Rectangle 21.png" alt=""></li>
+        <li class="splide__slide"><img src="img/Rectangle 22.png" alt=""></li>
+        <li class="splide__slide"><img src="img/Rectangle 23.png" alt=""></li>
+      </ul>
+    </div>
+  </div> -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+  <script>
+    new Splide('#mySlider', {
+      perPage: 3,      // show 3 images
+      perMove: 1,      // move 1 image per click
+      gap: '1rem',     // space between slides
+      breakpoints: {
+        768: {
+          perPage: 2,
+        },
+        576: {
+          perPage: 1, 
+        }
+      }
+    }).mount();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
