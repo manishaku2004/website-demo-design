@@ -1,5 +1,5 @@
 .bg-gradient-custom {
-background: linear-gradient(to bottom, hsl(53, 95%, 22%) 0%, #ffffff 22%) !important;}
+background: linear-gradient(to bottom, hsl(53, 95%, 22%) 0%, #ffffff 9%) !important;}
 .shadow-three-sides {
   /* Syntax: horizontal-offset vertical-offset blur spread color */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), /* Bottom shadow */
