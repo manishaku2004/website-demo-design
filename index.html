@@ -37,7 +37,7 @@
         <!-- Left menu -->
         <ul class="navbar-nav me-3 mb-2 mb-lg-0 fw-bold">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Drops</a>
+            <a class="nav-link active " href="#" >Drops</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Stats</a>
@@ -76,26 +76,26 @@
 
   <nav class="navebar2 fs-24 fw-bold ">
     <div class="container-fluid d-flex flex-row gap-3" style="overflow-x: auto;">
-      <div class=" d-inline-flex p-2 bg-transparent  shadow-three-sides w-66  rounded-4">All</div>
+      <div>  <button type="button" class=" d-inline-flex p-2 bg-transparent  shadow-three-sides w-66  rounded-4 border-0">All</button> </div>
       <div>
         <ul class="navbar-nav d-flex flex-row  gap-3">
           <li class="nav-item">
-            <a class="nav-link active " href="#">Art</a>
+            <a class="nav-link active " href="#art">Art</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Gaming</a>
+            <a class="nav-link active" href="#gaming">Gaming</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Memberships</a>
+            <a class="nav-link active" href="#...">Memberships</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">PFPs</a>
+            <a class="nav-link active" href="#...">PFPs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Photography</a>
+            <a class="nav-link active" href="#photography">Photography</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Music</a>
+            <a class="nav-link active" href="#...">Music</a>
           </li>
 
         </ul>
@@ -122,16 +122,16 @@
     
     <div class=" box1 d-flex flex-row   align-items-center  flex-nowrap" style="overflow-x: auto; white-space: nowrap;">
       <div class=" top d-flex   align-items-center    rounded  bg-top ">
-        <button type="button" class="btn btn-light fw-bold shadow-lg ">Trending</button>
-        <p class="px-3 d-flex align-items-center">Top </p>
+        <button type="button" class="btn btn-time border-0 fw-bold shadow-lg ">Trending</button>
+        <p  > <button class="  btn-time p-1 shodows-sm fw-bold rounded border-0 ">Top</button> </p>
       </div>
 
       <div class=" d-flex align-items-center justify-content-between m-3 w-50 gap-4">
         <div class=" d-flex align-items-center bg-top rounded shadow px-2">
-          <p>1h</p>
-          <p>6h</p>
-          <p class="p-1 shodows-sm fw-bold rounded  bg-light">24h</p>
-          <p>7h</p>
+          <p> <button class=" btn-time p-1 shodows-sm fw-bold rounded border-0  " >1h</button></p>
+          <p> <button class="btn-time p-1 shodows-sm fw-bold rounded border-0 " >6h</button></p>
+          <p > <button class="btn-time p-1 shodows-sm fw-bold rounded  border-0" >24h</button></p>
+          <p> <button class="btn-time p-1 shodows-sm fw-bold rounded border-0 " >7h</button></p>
         </div>
         <div class="dropdown rounded shadow">
           <button class="btn bg-top dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -292,16 +292,16 @@
     <div class=" py-3">
       <h4>Explore Categories</h4>
       <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 mx-0">
-        <div class="col">
+        <div class="col" id="art">
           <div class="card rounded-4 h-100">
             <img src="img/Rectangle 25.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Art</h5>
+              <h5 class="card-title " >Art</h5>
             </div>
 
           </div>
         </div>
-        <div class="col">
+        <div class="col"id="gaming">
           <div class="card rounded-4 h-100">
             <img src="img/Rectangle 26.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -310,7 +310,7 @@
 
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="photography">
           <div class="card rounded-4 h-100">
             <img src="img/Rectangle 27.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -324,12 +324,12 @@
   </main>
   <footer class="bg-f_color text-light ">
     <div class="d-flex mx-4 ">
-      <div class="">
+      <div class=" ">
         <h4>Stay in the loop</h4>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
           some form,</p>
-        <input class=" rounded-3 p-1 border-0 shadow w-50  " type="text" placeholder="  Your email address">
-        <button class="rounded-3 p-1 border-0 shadow bg-sign text-light w-25"> Sign up</button>
+        <input class=" rounded-3 p-1 border-0 shadow w-40  " type="text" placeholder="  Your email address">
+        <button class="rounded-3 p-1 border-0 shadow bg-sign text-light w-40 "style="margin: 8px;"> Sign up</button>
       </div>
       <div>
         <h3>Join the community</h3>
@@ -433,6 +433,23 @@
       </ul>
     </div>
   </div> -->
+
+
+  <script>
+let buttons = document.querySelectorAll(".btn-time");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    // remove active from all
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // add active to clicked one
+    button.classList.add("active");
+
+  });
+});
+</script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 
